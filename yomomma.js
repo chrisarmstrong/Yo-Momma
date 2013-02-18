@@ -22,25 +22,26 @@ var jokes = {
 };
 
 var categories = Object.keys(jokes);
-		
+
 function newJoke(cat) {
   if(cat) {
-    $('.category').text(cat); 
-    for(var i = 0; i < categories.length; i++) {
+    $('.category').text(cat);
+    var catLength = categories.length;
+    for(var i = 0; i < catLength; i++) {
       if(categories[i] == cat) {
           $('.punchline').text(jokes[categories[i]][Math.floor(Math.random()*jokes[categories[i]].length)]);
       }
     }
   } else {
     var i = Math.floor(Math.random()*categories.length);
-  
+
     $('.category').text(categories[i]);
     $('.punchline').text(jokes[categories[i]][Math.floor(Math.random()*jokes[categories[i]].length)]);
   }
 }
-		
+
 newJoke();
-		
+
 $('.new-joke').click(function(){
    newJoke();
    return false;
