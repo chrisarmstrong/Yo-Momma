@@ -43,13 +43,17 @@ function newInsult(cat) {
     for(var i = 0; i < catLength; i++) {
       if(categories[i] == cat) {
           $('.punchline').text(insults[categories[i]][Math.floor(Math.random()*insults[categories[i]].length)]);
+          /*
+$('.actions').append('<a href="https://twitter.com/share" class="twitter-share-button" data-text="Yo’ momma so '+cat+', '+insults[categories[i]+'" data-via="Armstrong">Tweet This</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>')
+*/
       }
     }
   } else {
     var i = Math.floor(Math.random()*categories.length);
-
     $('.category').text(categories[i]);
     $('.punchline').text(insults[categories[i]][Math.floor(Math.random()*insults[categories[i]].length)]);
+    $('.actions').html('<a href="" class="new-joke">Gimme Another</a><a href="https://twitter.com/share" class="twitter-share-button" data-text="Yo’ momma so '+categories[i]+', '+$('.punchline').text()+'" data-via="Armstrong">Tweet This</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>')
   }
 }
 
