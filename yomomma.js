@@ -6,7 +6,8 @@ var insults = {
 		"she jumped up in the air and got stuck",
 		"when she stands up she has to sit down for a break",
 		"Obi Wan Kenobi said “Yep, that’s a moon”",
-		"she shows up on Google Maps. Without zoom."
+		"she shows up on Google Maps. Without zoom.",
+		"when she fell down the stairs I thought Eastenders was starting"
 	],
 	"ugly":[
 		"she had to tie a steak to her neck so the dog wanted to play with her",
