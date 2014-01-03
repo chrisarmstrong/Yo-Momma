@@ -31,7 +31,8 @@ var insults = {
 		"she got ran over by a parked car",
 		"she missed the #44 bus, and took the #22 twice instead",
 		"she sold the car for gas money",
-		"she thinks a quarterback is a refund"
+		"she thinks a quarterback is a refund",
+		"she had a Commodore 63"
 	]
 };
 
